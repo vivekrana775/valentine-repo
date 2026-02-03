@@ -42,7 +42,7 @@ export default function ValentineProposal({ userName }: ValentineProposalProps) 
   const handleNo = () => {
     setNoClicks(noClicks + 1);
     playClickSound();
-    
+
     // Random position change for button
     if (noButtonRef.current && noClicks < 6) {
       const randomX = (Math.random() - 0.5) * 200;
@@ -137,7 +137,7 @@ export default function ValentineProposal({ userName }: ValentineProposalProps) 
               </div>
             </div>
             <p className="text-2xl text-foreground/80 mb-8 font-medium">
-              {userName} said YES! 
+              {userName} said YES!
             </p>
             <p className="text-lg text-foreground/60 mb-10">
               This is going to be the best Valentine's Day ever! 🎉✨
@@ -225,8 +225,8 @@ export default function ValentineProposal({ userName }: ValentineProposalProps) 
             {noClicks > 0 && (
               <div className="mt-8 text-sm text-foreground/50 font-medium">
                 {noClicks === 1 && '😢 Oof, one no...'}
-                {noClicks === 2 && '😞 That&apos;s two nos...'}
-                {noClicks >= 3 && noClicks < 8 && `😭 That&apos;s ${noClicks} nos so far...`}
+                {noClicks === 2 && `😞 That's two nos...`}
+                {noClicks >= 3 && noClicks < 8 && `😭 That's ${noClicks} nos so far...`}
                 {noClicks >= 8 && '🤷 The No button went bye-bye!'}
               </div>
             )}
