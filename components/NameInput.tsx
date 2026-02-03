@@ -81,10 +81,10 @@ export default function NameInput({ onNameSubmit }: NameInputProps) {
             <p className="text-sm text-foreground/60 mb-3">💡 Pro tip:</p>
             <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
               <p className="text-xs text-foreground/70">
-                You can also share a direct link:
+                You can also share a direct link to your proposal:
               </p>
               <p className="text-sm text-primary font-mono mt-2">
-                yoursite.com?name=Alex
+                https://bemyvalentine-ask.vercel.app/?name=YourName
               </p>
             </div>
           </div>
